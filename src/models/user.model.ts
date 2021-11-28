@@ -10,10 +10,10 @@ export class User extends Entity {
   id?: string;
 
   @property({
-    type: 'string',
+    type: 'number',
     required: true,
   })
-  typeUser: string;
+  typeUser: number;
 
   @property({
     type: 'string',
@@ -24,6 +24,12 @@ export class User extends Entity {
   @property({
     type: 'string',
     required: true,
+  })
+  email: string;
+
+  @property({
+    type: 'string',
+    required: false,
   })
   password: string;
 
